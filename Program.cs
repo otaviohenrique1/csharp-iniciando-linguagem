@@ -21,18 +21,41 @@ class Program
     //   Console.WriteLine("Mes " + mes + " => " + investimento);
     // }
 
-    double fatorRendimento = 1.005;
-    double investimento = 1000;
-    for (int anos = 1; anos <= 5; anos++)
+    // double fatorRendimento = 1.005;
+    // double investimento = 1000;
+    // for (int anos = 1; anos <= 5; anos++)
+    // {
+    //   for (int mes = 1; mes <= 12; mes++)
+    //   {
+    //     investimento *= fatorRendimento;
+    //   }
+    //   fatorRendimento += 0.001;
+    // }
+    // Console.WriteLine("Depois de 5 anos você terá R$ " + investimento);
+
+    /* Com break */
+    for (int contadorLinhas = 0; contadorLinhas < 10; contadorLinhas++)
     {
-      for (int mes = 1; mes <= 12; mes++)
+      for (int contadorColunas = 0; contadorColunas < 10; contadorColunas++)
       {
-        investimento *= fatorRendimento;
+        Console.Write("*");
+        if (contadorColunas >= contadorLinhas)
+        {
+          break;
+        }
       }
-      fatorRendimento += 0.001;
+      Console.WriteLine();
     }
 
-    Console.WriteLine("Depois de 5 anos você terá R$ " + investimento);
+    /* Sem break */
+    for (int contadorLinhas = 0; contadorLinhas < 10; contadorLinhas++)
+    {
+      for (int contadorColunas = 0; contadorColunas <= contadorLinhas; contadorColunas++)
+      {
+        Console.Write("*");
+      }
+      Console.WriteLine();
+    }
 
     /*
       -- Operadores lógicos
