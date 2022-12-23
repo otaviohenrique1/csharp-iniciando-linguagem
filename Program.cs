@@ -56,10 +56,20 @@ class Program
       - C#
       - Dart
       - Typescript
-      - PHP" ;
+      - PHP";
     Console.WriteLine(texto2);
 
-    /*Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facilis quis mollitia dignissimos iure deleniti eum facere ea fugit architecto. Earum quis reiciendis esse magnam perferendis veniam vero ad eos?*/
+    Console.WriteLine("Executando projeto 6 - Atribuições de variáveis");
+
+    int idade2 = 30;
+    int idadeAna = idade2;
+
+    Console.WriteLine(idadeAna);
+
+    idade2 = 25;
+
+    Console.WriteLine("Tecle enter para fechar ...");
+    Console.ReadLine();
 
     /*
       short => 16bits
@@ -68,22 +78,22 @@ class Program
       long => 64bits
     */
 
-    // double x1 = 1.01d;
-    // double x2 = 1.01;
-    // float y1 = 1.01f;
-    // float y2 = 1;
-    // int k1 = (int)x1;
-    // int k2 = (int)y1;
-    // float j1 = (float)x1;
-    // float j2 = (float)x2;
-    // Console.WriteLine(x1);
-    // Console.WriteLine(x2);
-    // Console.WriteLine(y1);
-    // Console.WriteLine(y2);
-    // Console.WriteLine(k1);
-    // Console.WriteLine(k2);
-    // Console.WriteLine(j1);
-    // Console.WriteLine(j2);
+    /* double x1 = 1.01d;
+    double x2 = 1.01;
+    float y1 = 1.01f;
+    float y2 = 1;
+    int k1 = (int)x1;
+    int k2 = (int)y1;
+    float j1 = (float)x1;
+    float j2 = (float)x2;
+    Console.WriteLine(x1);
+    Console.WriteLine(x2);
+    Console.WriteLine(y1);
+    Console.WriteLine(y2);
+    Console.WriteLine(k1);
+    Console.WriteLine(k2);
+    Console.WriteLine(j1);
+    Console.WriteLine(j2); */
   }
 }
 

@@ -1,7 +1,7 @@
 ﻿namespace HelloWorld;
 using System;
 
-class Aula2
+class Aula1
 {
   // static void Main(string[] args)
   // {
