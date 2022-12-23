@@ -5,7 +5,46 @@ class Program
 {
   static void Main(string[] args)
   {
-    int idade;
+    /*
+      || => ou
+      && => e
+    */
+
+    int idade = 36;
+    int quantidadePessoas = 2;
+
+    // bool validaMaiorDeIdadeOuSeEstaAcompanhado = idade >= 18 || quantidadePessoas > 1;
+    bool validaMaiorDeIdadeESeEstaAcompanhado = idade >= 18 && quantidadePessoas > 1;
+    if (validaMaiorDeIdadeESeEstaAcompanhado)
+    {
+      Console.WriteLine("Maior de idade e esta acompanhado, pode entrar");
+    }
+    else
+    {
+      Console.WriteLine("Menor de idade, não pode entrar");
+    }
+
+    /* int idade = 36;
+    int quantidadePessoas = 2;
+    bool validaIdade = idade < 18;
+    bool validaQuantidadePessoas = quantidadePessoas > 1;
+    if (validaIdade)
+    {
+      Console.WriteLine("Menor de idade, não pode entrar");
+    }
+    else
+    {
+      if (validaQuantidadePessoas)
+      {
+        Console.WriteLine("Esta acompanhado, pode entrar");
+      }
+      else
+      {
+        Console.WriteLine("Não pode entrar");
+      }
+    } */
+
+    /* int idade;
     idade = 28;
     Console.WriteLine(idade);
 
@@ -42,7 +81,7 @@ class Program
     Console.WriteLine(letra1);
 
     char letra2;
-    letra2 = (char)65; /* 65 => Codigo do caractere 'A' da tabela ASCII */
+    letra2 = (char)65; // 65 => Codigo do caractere 'A' da tabela ASCII
     Console.WriteLine(letra2);
 
     string texto1;
@@ -57,19 +96,15 @@ class Program
       - Dart
       - Typescript
       - PHP";
-    Console.WriteLine(texto2);
+    Console.WriteLine(texto2); */
 
-    Console.WriteLine("Executando projeto 6 - Atribuições de variáveis");
-
+    /* Console.WriteLine("Executando projeto 6 - Atribuições de variáveis");
     int idade2 = 30;
     int idadeAna = idade2;
-
     Console.WriteLine(idadeAna);
-
     idade2 = 25;
-
     Console.WriteLine("Tecle enter para fechar ...");
-    Console.ReadLine();
+    Console.ReadLine(); */
 
     /*
       short => 16bits
