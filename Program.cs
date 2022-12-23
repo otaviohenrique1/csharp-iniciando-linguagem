@@ -6,8 +6,11 @@ class Program
   static void Main(string[] args)
   {
     /*
+      -- Operadores lógicos
       || => ou
       && => e
+      == => Igual
+      = => Atribuição
     */
 
     int idade = 36;
