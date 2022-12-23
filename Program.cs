@@ -5,6 +5,35 @@ class Program
 {
   static void Main(string[] args)
   {
+    // double investimento = 1000;
+    // int mes = 1;
+    // while (mes <= 12)
+    // {
+    //   investimento = investimento + investimento * 0.005;
+    // Console.WriteLine("Mes " + mes + " => " + investimento);
+    //   mes++;
+    // }
+
+    // double investimento = 1000;
+    // for (int mes = 1; mes <= 12; mes++)
+    // {
+    //   investimento *= 1.005;
+    //   Console.WriteLine("Mes " + mes + " => " + investimento);
+    // }
+
+    double fatorRendimento = 1.005;
+    double investimento = 1000;
+    for (int anos = 1; anos <= 5; anos++)
+    {
+      for (int mes = 1; mes <= 12; mes++)
+      {
+        investimento *= fatorRendimento;
+      }
+      fatorRendimento += 0.001;
+    }
+
+    Console.WriteLine("Depois de 5 anos você terá R$ " + investimento);
+
     /*
       -- Operadores lógicos
       || => ou
@@ -13,10 +42,10 @@ class Program
       = => Atribuição
     */
 
-    int idade = 36;
+    /* int idade = 36;
     int quantidadePessoas = 2;
 
-    // bool validaMaiorDeIdadeOuSeEstaAcompanhado = idade >= 18 || quantidadePessoas > 1;
+    bool validaMaiorDeIdadeOuSeEstaAcompanhado = idade >= 18 || quantidadePessoas > 1;
     bool validaMaiorDeIdadeESeEstaAcompanhado = idade >= 18 && quantidadePessoas > 1;
     if (validaMaiorDeIdadeESeEstaAcompanhado)
     {
@@ -25,7 +54,7 @@ class Program
     else
     {
       Console.WriteLine("Menor de idade, não pode entrar");
-    }
+    } */
 
     /* int idade = 36;
     int quantidadePessoas = 2;
